@@ -1,0 +1,22 @@
+#! /bin/bash
+
+
+# To stop fireall:
+# sudo systemctl disable firewalld
+# sudo systemctl stop    firewalld
+
+MY_NAME=Colossus-Guardian
+MY_ADDR=10.10.10.1
+MY_PORT=9100
+
+OTHER_ADDR=10.10.10.2
+OTHER_PORT=9101
+
+go run ./gotron.go ${MY_NAME} ${MY_ADDR} ${MY_PORT} ${OTHER_ADDR} ${OTHER_PORT} 
+
+
+
+
+
+
+
